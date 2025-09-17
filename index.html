@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Óptica | Visión y Estilo</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Inter:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/3b3f9c9e0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="logo.jpg" alt="Premium Óptica" width="200" style="vertical-align: middle;">
+    </div>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#marcas">Marcas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="btn-reserva" onclick="document.getElementById('form-section').scrollIntoView({behavior: 'smooth'})">
+      Reservá tu turno
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Visión clara, estilo premium</h1>
+      <p>Encontrá los anteojos perfectos para tu rostro y necesidades visuales.</p>
+      <button onclick="document.getElementById('form-section').scrollIntoView({behavior: 'smooth'})">
+        Consulta gratuita
+      </button>
+    </div>
+    <div class="hero-img">
+      <img src="hero.jpg" alt="Anteojos de sol y graduados" />
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="services">
+    <h2>Nuestros Servicios</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Anteojos Recetados</h3>
+        <p>Lentes con graduación precisa, monturas modernas y asesoramiento personalizado.</p>
+      </div>
+      <div class="card">
+        <h3>Anteojos de Sol</h3>
+        <p>Protección UV con diseño y comodidad. Para hombre, mujer y niños.</p>
+      </div>
+      <div class="card">
+        <h3>Lentes de Contacto</h3>
+        <p>Variedad de marcas, ajuste especializado y seguimiento profesional.</p>
+      </div>
+      <div class="card">
+        <h3>Accesorios</h3>
+        <p>Solución limpiadora, estuches, paños microfibra y más.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marcas -->
+  <section id="marcas" class="brands">
+    <h2>Marcas que Ofrecemos</h2>
+    <p>Trabajamos con las mejores marcas del mundo en óptica y contactología.</p>
+    <div class="brand-logos">
+      <span>Ray-Ban</span>
+      <span>Oakley</span>
+      <span>Polaroid</span>
+      <span>Vogue</span>
+      <span>Arnette</span>
+      <span>Police</span>
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="testimonials">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="testimonial">
+      <p>"Excelente atención y variedad. Me ayudaron a elegir mis primeros lentes de contacto con mucha paciencia."</p>
+      <strong>— Laura M., cliente desde 2023</strong>
+    </div>
+  </section>
+
+  <!-- Formulario SIN adjuntar archivos -->
+  <section id="form-section" class="contact-form">
+    <h2>¿Querés agendar una consulta?</h2>
+    <p>Completá el formulario y te responderemos por WhatsApp o email. Si tenés tu receta, podés mencionarlo en el mensaje.</p>
+
+    <form action="https://formspree.io/f/xblavqyb" method="POST">
+      <input type="text" name="name" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu email" required>
+      <input type="tel" name="phone" placeholder="Tu WhatsApp (ej: 2617521295)" required>
+      <textarea name="message" placeholder="¿Tenés receta? Cuéntanos tus necesidades visuales..." rows="4"></textarea>
+
+      <button type="submit">Enviar solicitud</button>
+    </form>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contact">
+    <h2>Visitános</h2>
+    <div class="contact-info">
+      <p><i class="fas fa-map-marker-alt"></i> OLEGARIO ANDRADE 30, LAS HERAS, MENDOZA</p>
+      <p><i class="fas fa-phone"></i> <a href="https://wa.me/542617521295" target="_blank">WhatsApp: 2617521295</a></p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:opticaetpremium@gmail.com">opticaetpremium@gmail.com</a></p>
+      <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/premium_optica_contactologia_/" target="_blank">@premium_optica_contactologia_</a></p>
+    </div>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2818.039431667478!2d-68.83441767243286!3d-32.865566233070815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e08c24ef72a67%3A0xd7aaae3df69eeb3c!2sAndrade%2030%2C%20M5500%20BDH%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1758138841707!5m2!1ses-419!2sar" 
+    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Franck Soluciones Informáticas 2025, todos los derechos reservados.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/premium_optica_contactologia_/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/542617521295" class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
